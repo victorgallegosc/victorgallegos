@@ -11,15 +11,35 @@
         text-align: center;
         max-width: 60%;
     }
+    #presentation-profile-photo {
+        height: 200px;
+    }
 }
 @media (min-width: 840px) {
     .title-regular {
         font-size: 36px;
     }
+    .presentation {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+
+        padding: 0px 100px;
+    }
+    #presentation-profile-photo {
+        height: 400px;
+        padding-left: 20px;
+    }
+    .title-div {
+        padding-right: 20px;
+        max-width: 565px;
+    }
 }
 #main-presentation {
     display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: antiquewhite;
+
     height: 100vh;
 }
 .presentation {

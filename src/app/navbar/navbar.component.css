@@ -12,11 +12,11 @@
         justify-content: space-between;
 
         box-sizing: border-box;
-        padding: 0px 100px;
+        padding: 0px 200px;
         width: 100%;
     }
     .navbar-tabs-div{
-        max-width: 55%;
+        max-width: 50%;
     }
 }
 nav {
