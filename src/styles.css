@@ -1,1 +1,112 @@
-/* You can add global styles to this file, and also import other style files */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+@media (max-width: 839px) {
+    .title {
+        font-size: 20px;
+    }
+
+}
+
+/* --- Generic --- */
+/* Margins */
+.no-mg {margin: 0;}
+.mg-top-5 {margin-top: 5px;}
+.mg-bottom-5 {margin-bottom: 5px;}
+.mg-left-5 {margin-left: 5px;}
+.mg-right-5 {margin-right: 5px;}
+.mg-top-10 {margin-top: 10px;}
+.mg-bottom-10 {margin-bottom: 10px;}
+.mg-left-10 {margin-left: 10px;}
+.mg-right-10 {margin-right: 10px;}
+.mg-top-15 {margin-top: 15px;}
+.mg-bottom-15 {margin-bottom: 15px;}
+.mg-left-15 {margin-left: 15px;}
+.mg-right-15 {margin-right: 15px;}
+.mg-top-20 {margin-top: 20px;}
+.mg-bottom-20 {margin-bottom: 20px;}
+.mg-left-20 {margin-left: 20px;}
+.mg-right-20 {margin-right: 20px;}
+
+/* Paddings */
+.no-pd {padding: 0;}
+.pd-top-5 {padding-top: 5px;}
+.pd-bottom-5 {padding-bottom: 5px;}
+.pd-left-5 {padding-left: 5px;}
+.pd-right-5 {padding-right: 5px;}
+.pd-top-10 {padding-top: 10px;}
+.pd-bottom-10 {padding-bottom: 10px;}
+.pd-left-10 {padding-left: 10px;}
+.pd-right-10 {padding-right: 10px;}
+.pd-top-15 {padding-top: 15px;}
+.pd-bottom-15 {padding-bottom: 15px;}
+.pd-left-15 {padding-left: 15px;}
+.pd-right-15 {padding-right: 15px;}
+.pd-top-20 {padding-top: 20px;}
+.pd-bottom-20 {padding-bottom: 20px;}
+.pd-left-20 {padding-left: 20px;}
+.pd-right-20 {padding-right: 20px;}
+
+/* Other */
+.pointer {cursor: pointer;}
+
+/* --- Fonts --- */
+.logo-regular {
+    font-family: "Oleo Script", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+
+    background: #783add;
+    background: linear-gradient(to right, #783add 20%, #bb37d6 65%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+.title-regular {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+
+    color: black;
+}
+.tab-regular {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+
+    color: black;
+}
+.text-regular {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+
+    color: black;
+}
+.text-bold {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+
+    color: black;
+}
+.gradient-text {
+    background: #783add;
+    background: linear-gradient(to right, #783add 20%, #bb37d6 65%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
