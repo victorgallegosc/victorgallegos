@@ -1,0 +1,29 @@
+@media (max-width: 839px) {
+    #main-presentation {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .presentation {
+        flex-direction: column;
+        justify-content: center;
+
+        text-align: center;
+        max-width: 60%;
+    }
+}
+@media (min-width: 840px) {
+    .title-regular {
+        font-size: 36px;
+    }
+}
+#main-presentation {
+    display: flex;
+    background-color: antiquewhite;
+    height: 100vh;
+}
+.presentation {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
