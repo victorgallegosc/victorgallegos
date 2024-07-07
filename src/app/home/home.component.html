@@ -1,19 +1,91 @@
 <div class="container">
-    <section id="main-presentation">
-        <div class="presentation">
-            <div class="profile-photo-div">
-                <img id="presentation-profile-photo" src="/images/Profile-circular.webp" alt="Profile"/>
-            </div>
-            <div class="title-div">
-                <p class="title-regular">
-                    I´m Victor, a Web Developer at
-                    <span class="gradient-text">Epicor.</span> I enjoy creating user-centric
-                    and delightful experiences.
-                </p>
-            </div>
-        </div>
-    </section>
-    <section class="">
+  <section id="main-presentation">
+    <div class="presentation">
+      <div class="profile-photo-div">
+        <img
+          id="presentation-profile-photo"
+          src="/images/Profile-circular.webp"
+          alt="Profile"
+        />
+      </div>
+      <div class="title-div">
+        <p class="title-regular title">
+          I´m Victor, a Web Developer at
+          <span class="gradient-text">Epicor.</span> I enjoy creating
+          user-centric and delightful experiences.
+        </p>
+      </div>
+    </div>
+  </section>
 
-    </section>
+  <section id="about-me-section" class="section">
+    <div id="profile-photo-div">
+      <img src="images/Profile-BW.webp" height="150px"/>
+    </div>
+    <p class="title title-regular mg-bottom-5">About me</p>
+    <div id="about-me-paragraphs">
+      <p class="text-regular mg-top-5">
+      I'm a dedicated Software Engineering student, doing my last semester at
+      the Facultad de Ingeniería Mecánica y Eléctrica at UANL. My focus is on
+      Web Development, and I’m passionate about creating user-friendly and
+      beautiful web applications.
+      </p>
+      <p class="text-regular">
+        Do you want to keep reading? Click below to go to the
+        <strong>About me</strong> section. Instead, you can simply
+        <a id="download-resume">download my resume.</a>
+      </p>
+      <p class="text-regular"></p>
+      <button class="primary-button" (click)="popup.togglePopup()">About me</button>
+    </div>
+    <app-popup #popup></app-popup>
+    
+  </section>
+
+  <section id="offer-section" class="section">
+    <p class="title-regular no-mg title">What can I do for you?</p>
+    <p id="offer-section-intro" class="text-regular">
+      As a versatile web developer with a keen eye for design, I offer a range
+      of services to bring your digital vision to life:
+    </p>
+    <div class="offers-div">
+      <div class="offer">
+        <video autoplay loop>
+          <source src="/images/anim/custom.webm" type="video/webm" />
+        </video>
+        <p class="text-regular">
+          Creating customized web solutions that align perfectly with your unique
+          requirements and objectives.
+        </p>
+      </div>
+      <div class="offer">
+        <video id="ui-design-video" autoplay loop>
+          <source src="/images/anim/ui-design.webm" type="video/webm" />
+        </video>
+        <p class="text-regular">
+          Designing interfaces that are both easy to use and visually engaging,
+          enhancing the overall user experience.
+        </p>
+      </div>
+      <div class="offer">
+        <video autoplay loop>
+          <source src="/images/anim/responsive.webm" type="video/webm" />
+        </video>
+        <p class="text-regular">
+          Ensuring your website looks and functions perfectly on any device, from
+          desktops to smartphones.
+        </p>
+      </div>
+      <div class="offer">
+        <video autoplay loop>
+          <source src="/images/anim/friendly.webm" type="video/webm" />
+        </video>
+        <p class="text-regular">
+          Building strong, efficient, and optimized user-friendly websites using
+          the best technologies.
+        </p>
+      </div>
+    </div>
+    
+  </section>
 </div>

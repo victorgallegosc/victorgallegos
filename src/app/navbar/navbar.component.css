@@ -1,13 +1,26 @@
 @media (max-width: 839px) {
-    .navbar {
+    #navbar {
         flex-direction: column;
         justify-content: center;
         width: 100%;
     }
     
 }
-@media (min-width: 840px) {
-    .navbar {
+@media (min-width: 840px) and (max-width: 1250px) {
+    #navbar {
+        flex-direction: row;
+        justify-content: space-between;
+
+        box-sizing: border-box;
+        padding: 0px 100px;
+        width: 100%;
+    }
+    .navbar-tabs-div{
+        max-width: 50%;
+    }
+}
+@media (min-width: 1251px) {
+    #navbar {
         flex-direction: row;
         justify-content: space-between;
 
@@ -25,13 +38,17 @@ nav {
     justify-content: center;
     width: 100%;
 }
-.navbar {
+#navbar {
     display: flex;
     align-items: center;
+
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(8px);
 
     position: fixed;
     top: 0;
     height: 100px;
+    transition: height 0.3s ease, transform 0.3s ease;
     max-width: 1550px;
     z-index: 1;
 }

@@ -6,11 +6,56 @@ body {
     margin: 0;
 }
 
+:root {
+    --primary: #783add;
+    --secondary: #bb37d6;
+    --accent: #7037cb;
+
+    --accentbg: #7037cb32;
+}
+
+button {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+  
+    border-radius: 30px;
+    border: solid;
+    border-width: 2px;
+  
+    font-size: 14px;
+    padding: 10px 30px;
+  
+    cursor: pointer;
+}
+
+.primary-button {
+  background-color: var(--accent);
+  border-color: var(--accent);
+  color: white;
+}
+
+.alternative-button {
+  background-color: white;
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.disabled-button {
+  background-color: gray;
+  color: white;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
 @media (max-width: 839px) {
     .title {
         font-size: 20px;
     }
-
 }
 
 /* --- Generic --- */
@@ -53,7 +98,6 @@ body {
 .pd-right-20 {padding-right: 20px;}
 
 /* Other */
-.pointer {cursor: pointer;}
 
 /* --- Fonts --- */
 .logo-regular {

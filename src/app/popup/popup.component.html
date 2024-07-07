@@ -1,0 +1,22 @@
+<!-- popup.component.html -->
+<div class="overlay" id="overlay" (click)="hidePopup()"></div>
+<div id="popup" class="popup">
+  <h2 class="title title-regular">Select Language</h2>
+  <p class="text-regular">
+    Do you want to download the file in English or Spanish?
+  </p>
+  <div>
+    <button
+      class="open-sans-text primary-button mg-right-10"
+      (click)="downloadFile('english')"
+    >
+      English
+    </button>
+    <button
+      class="open-sans-text alternative-button mg-left-10"
+      (click)="downloadFile('spanish')"
+    >
+      Spanish
+    </button>
+  </div>
+</div>

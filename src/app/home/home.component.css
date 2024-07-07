@@ -1,49 +1,158 @@
+@import "../../styles.css";
 @media (max-width: 839px) {
-    #main-presentation {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .presentation {
-        flex-direction: column;
-        justify-content: center;
-
-        text-align: center;
-        max-width: 60%;
-    }
-    #presentation-profile-photo {
-        height: 200px;
-    }
-}
-@media (min-width: 840px) {
-    .title-regular {
-        font-size: 36px;
-    }
-    .presentation {
-        flex-direction: row-reverse;
-        justify-content: space-between;
-
-        padding: 0px 100px;
-    }
-    #presentation-profile-photo {
-        height: 400px;
-        padding-left: 20px;
-    }
-    .title-div {
-        padding-right: 20px;
-        max-width: 565px;
-    }
-}
-#main-presentation {
-    display: flex;
+  #main-presentation {
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: antiquewhite;
+  }
+  .presentation {
+    flex-direction: column;
+    justify-content: center;
 
-    height: 100vh;
+    text-align: center;
+    max-width: 80%;
+  }
+  #presentation-profile-photo {
+    height: 200px;
+  }
+  #about-me-paragraphs {
+    text-align: justify;
+    width: 80%;
+  }
+  #offer-section {
+    padding: 0px 50px;
+  }
+  .offer {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .offer video {
+    height: 100px;
+  }
+}
+
+@media (min-width: 840px) and (max-width: 1250px){
+  .title-regular {
+    font-size: 36px;
+  }
+  .presentation {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    padding: 0px 100px;
+  }
+  #presentation-profile-photo {
+    height: 300px;
+    padding-left: 20px;
+  }
+  .title-div {
+    padding-right: 20px;
+    max-width: 565px;
+  }
+  #about-me-paragraphs {
+    text-align: justify;
+    width: 70%;
+  }
+  #offer-section p {
+    text-align: center;
+  }
+  #offer-section-intro {
+    width: 70%;
+  }
+  .offers-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+    column-gap: 20px;
+    row-gap: 20px;
+    width: fit-content;
+  }
+  #ui-design-video {
+    height: 150px;
+  }
+}
+
+@media (min-width: 1251px) {
+  .title-regular {
+    font-size: 36px;
+  }
+  .presentation {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    padding: 0px 100px;
+  }
+  #presentation-profile-photo {
+    height: 400px;
+    padding-left: 20px;
+  }
+  .title-div {
+    padding-right: 20px;
+    max-width: 565px;
+  }
+  #about-me-paragraphs {
+    text-align: justify;
+    width: 60%;
+    max-width: 1000px;
+  }
+  .offers-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    max-width: 1100px;
+  }
+  .offer {
+    margin: 0px 10px;
+  }
+  #ui-design-video {
+    height: 150px;
+  }
+}
+.section {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+#main-presentation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
 }
 .presentation {
-    display: flex;
-    align-items: center;
-    height: 100%;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+#about-me-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#offer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#offer-section p {
+  text-align: center;
+}
+.offer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--accentbg);
+  border-radius: 10px;
+  height: 300px;
+  width: 250px;
+}
+.offer p {
+  padding: 0px 10px;
 }
