@@ -160,3 +160,6 @@
 .offer p {
   padding: 0px 10px;
 }
+.offer video {
+  background-color: transparent;
+}
