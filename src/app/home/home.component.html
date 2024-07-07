@@ -31,12 +31,11 @@
       beautiful web applications.
       </p>
       <p class="text-regular">
-        Do you want to keep reading? Click below to go to the
-        <strong>About me</strong> section. Instead, you can simply
-        <a id="download-resume">download my resume.</a>
+        I'm preparing the <strong>About me</strong> section. Meanwhile, you can simply
+        <a id="download-resume" (click)="popup.togglePopup()">download my resume.</a>
       </p>
       <p class="text-regular"></p>
-      <button class="primary-button" (click)="popup.togglePopup()">About me</button>
+      <button class="disabled-button" disabled>About me</button>
     </div>
     <app-popup #popup></app-popup>
     

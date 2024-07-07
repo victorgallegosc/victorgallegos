@@ -134,6 +134,10 @@
   align-items: center;
   justify-content: center;
 }
+#download-resume {
+  text-decoration: none;
+  color: var(--primary);
+}
 #offer-section {
   display: flex;
   flex-direction: column;
