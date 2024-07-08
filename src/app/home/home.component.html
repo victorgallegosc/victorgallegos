@@ -20,26 +20,27 @@
 
   <section id="about-me-section" class="section">
     <div id="profile-photo-div">
-      <img src="images/Profile-BW.webp" height="150px"/>
+      <img src="images/Profile-BW.webp" height="150px" />
     </div>
     <p class="title title-regular mg-bottom-5">About me</p>
     <div id="about-me-paragraphs">
       <p class="text-regular mg-top-5">
-      I'm a dedicated Software Engineering student, doing my last semester at
-      the Facultad de Ingeniería Mecánica y Eléctrica at UANL. My focus is on
-      Web Development, and I’m passionate about creating user-friendly and
-      beautiful web applications.
+        I'm a dedicated Software Engineering student, doing my last semester at
+        the Facultad de Ingeniería Mecánica y Eléctrica at UANL. My focus is on
+        Web Development, and I’m passionate about creating user-friendly and
+        beautiful web applications.
       </p>
       <p class="text-regular">
         Do you want to keep reading? Click below to go to the
         <strong>About me</strong> section. Instead, you can simply
-        <a id="download-resume" (click)="popup.togglePopup()">download my resume.</a>
+        <a id="download-resume" (click)="popup.togglePopup()"
+          >download my resume.</a
+        >
       </p>
       <p class="text-regular"></p>
       <button class="primary-button">About me</button>
     </div>
     <app-popup #popup></app-popup>
-    
   </section>
 
   <section id="offer-section" class="section">
@@ -50,34 +51,82 @@
     </p>
     <div class="offers-div">
       <div class="offer">
-        <img src="/images/custom.png">
+        <img src="/images/custom.png" />
         <p class="text-regular">
-          Creating customized web solutions that align perfectly with your unique
-          requirements and objectives.
+          Creating customized web solutions that align perfectly with your
+          unique requirements and objectives.
         </p>
       </div>
       <div class="offer">
-        <img src="/images/ui-design.png">
+        <img src="/images/ui-design.png" />
         <p class="text-regular">
           Designing interfaces that are both easy to use and visually engaging,
           enhancing the overall user experience.
         </p>
       </div>
       <div class="offer">
-        <img src="/images/responsive.png">
+        <img src="/images/responsive.png" />
         <p class="text-regular">
-          Ensuring your website looks and functions perfectly on any device, from
-          desktops to smartphones.
+          Ensuring your website looks and functions perfectly on any device,
+          from desktops to smartphones.
         </p>
       </div>
       <div class="offer">
-        <img src="/images/friendly.png">
+        <img src="/images/friendly.png" />
         <p class="text-regular">
           Building strong, efficient, and optimized user-friendly websites using
           the best technologies.
         </p>
       </div>
     </div>
-    
+  </section>
+
+  <section id="portfolio-section" class="section">
+    <img src="images/rocket.png" />
+    <div class="portfolio-section-container">
+      <p class="title title-regular mg-top-5">Portfolio</p>
+      <p class="text-regular no-mg">
+        The projects I’ve worked on include school assignments and tasks related
+        to the courses I’ve completed.
+      </p>
+      <p class="text-regular">
+        Beyond my academic activities, I am currently involved in a web project
+        at my workplace. The project is being developed using Angular. To
+        successfully contribute to this initiative, everyone needs expertise in
+        responsive design, API consumption, app globalization, version control
+        systems, and, of course, proficiency in HTML, CSS, and TypeScript. Due
+        to company policies, I am unable to share images or specific details
+        related to this project.
+      </p>
+      <p class="text-regular">
+        I'm working on my portfolio, it will be online ASAP!
+      </p>
+      <button class="disabled-button" disabled>Go to Portfolio</button>
+    </div>
+  </section>
+
+  <section id="contact-section">
+    <div class="contact-container">
+      <img id="connect-img" src="images/Connections.webp" />
+      <p class="title title-regular no-mg">Let's Connect!</p>
+      <p class="text-regular">
+        Feel free to reach out, a friendly hello makes my day better😁
+      </p>
+      <p class="text-regular no-mg"><strong>Email:</strong> contact&#64;victorgallegos.com</p>
+      <div class="social-icons mg-top-10">
+        <a href="mailto: contact@victorgallegos.com" target="_blank">
+          <img src="images/icons/mail-icon.png"/>
+        </a>
+        <a href="https://www.instagram.com/queavictor" target="_blank">
+          <img src="images/icons/instagram-icon.png"/>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/victorgallegoscaceres/"
+          target="_blank"
+        >
+          <img src="images/icons/linkedin-icon.png"/>
+        </a>
+      </div>
+    </div>
   </section>
 </div>
