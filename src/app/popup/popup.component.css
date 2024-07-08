@@ -26,10 +26,10 @@
     z-index: 999;
   }
   .fade-in {
-    animation: fadeIn 0.5s forwards;
+    animation: fadeIn 0.2s forwards;
   }
   .fade-out {
-    animation: fadeOut 0.5s forwards;
+    animation: fadeOut 0.2s forwards;
   }
   @keyframes fadeIn {
     from { opacity: 0; }

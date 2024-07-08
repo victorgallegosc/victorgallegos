@@ -31,6 +31,10 @@ button {
     cursor: pointer;
 }
 
+a {
+    color: var(--primary);
+}
+
 .primary-button {
   background-color: var(--accent);
   border-color: var(--accent);
