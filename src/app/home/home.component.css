@@ -26,9 +26,6 @@
     margin-top: 10px;
     margin-bottom: 10px;
   }
-  .offer video {
-    height: 100px;
-  }
 }
 
 @media (min-width: 840px) and (max-width: 1250px){
@@ -69,9 +66,6 @@
     row-gap: 20px;
     width: fit-content;
   }
-  #ui-design-video {
-    height: 150px;
-  }
 }
 
 @media (min-width: 1251px) {
@@ -108,9 +102,6 @@
   .offer {
     margin: 0px 10px;
   }
-  #ui-design-video {
-    height: 150px;
-  }
 }
 .section {
   margin-top: 50px;
@@ -134,6 +125,10 @@
   align-items: center;
   justify-content: center;
 }
+#download-resume {
+  text-decoration: none;
+  color: var(--primary);
+}
 #offer-section {
   display: flex;
   flex-direction: column;
@@ -152,6 +147,9 @@
   border-radius: 10px;
   height: 300px;
   width: 250px;
+}
+.offer svg, img {
+  height: 100px;
 }
 .offer p {
   padding: 0px 10px;

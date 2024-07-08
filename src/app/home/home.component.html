@@ -33,10 +33,10 @@
       <p class="text-regular">
         Do you want to keep reading? Click below to go to the
         <strong>About me</strong> section. Instead, you can simply
-        <a id="download-resume" (click)="popup.togglePopup()">download my resume.</a>
+        <a id="download-resume">download my resume.</a>
       </p>
       <p class="text-regular"></p>
-      <button class="primary-button" >About me</button>
+      <button class="primary-button" (click)="popup.togglePopup()">About me</button>
     </div>
     <app-popup #popup></app-popup>
     
@@ -50,36 +50,28 @@
     </p>
     <div class="offers-div">
       <div class="offer">
-        <video autoplay loop>
-          <source src="/images/anim/custom.webm" type="video/webm" />
-        </video>
+        <img src="/images/custom.png">
         <p class="text-regular">
           Creating customized web solutions that align perfectly with your unique
           requirements and objectives.
         </p>
       </div>
       <div class="offer">
-        <video id="ui-design-video" autoplay loop>
-          <source src="/images/anim/ui-design.webm" type="video/webm" />
-        </video>
+        <img src="/images/ui-design.png">
         <p class="text-regular">
           Designing interfaces that are both easy to use and visually engaging,
           enhancing the overall user experience.
         </p>
       </div>
       <div class="offer">
-        <video autoplay loop>
-          <source src="/images/anim/responsive.webm" type="video/webm" />
-        </video>
+        <img src="/images/responsive.png">
         <p class="text-regular">
           Ensuring your website looks and functions perfectly on any device, from
           desktops to smartphones.
         </p>
       </div>
       <div class="offer">
-        <video autoplay loop>
-          <source src="/images/anim/friendly.webm" type="video/webm" />
-        </video>
+        <img src="/images/friendly.png">
         <p class="text-regular">
           Building strong, efficient, and optimized user-friendly websites using
           the best technologies.
