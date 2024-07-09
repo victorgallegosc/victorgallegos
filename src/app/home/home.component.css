@@ -105,6 +105,9 @@
 }
 
 @media (min-width: 1251px) {
+  #about-me-section, #offer-section {
+    height: 50vh;
+  }
   .title-regular {
     font-size: 36px;
   }
@@ -137,6 +140,22 @@
   }
   .offer {
     margin: 0px 10px;
+  }
+  .portfolio-section-container {
+    width: 60%;
+  }
+  #portfolio-section p{
+    text-align: justify;
+  }
+  #connect-img {
+    height: 300px;
+    padding-left: 15px;
+  }
+  .social-icons img {
+    height: 30px;
+  }
+  .social-icons {
+    width: 180px;
   }
 }
 .section {
