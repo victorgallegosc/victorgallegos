@@ -26,7 +26,7 @@
         </div>
         <div class="navbar-tabs-div">
           <div>
-            <a routerLink="/home" class="tab tab-regular">HOME</a>
+            <a (click)="goToHome()" class="tab tab-regular">HOME</a>
           </div>
           <div>
             <a routerLink="/about" class="tab tab-regular">ABOUT</a>
@@ -35,7 +35,7 @@
             <a routerLink="/portfolio" class="tab tab-regular">PORTFOLIO</a>
           </div>
           <div>
-            <a routerLink="/contact" class="tab-regular">CONTACT</a>
+            <a (click)="goToContact()" class="tab-regular">CONTACT</a>
           </div>
         </div>
       </div>

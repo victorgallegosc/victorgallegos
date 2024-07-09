@@ -1,0 +1,88 @@
+@media (max-width: 839px) {
+    .intro {
+        width: 90%;
+    }
+    .project {
+        width: 90%;
+    }
+    .project-img img {
+        width: 80%;
+    }
+    #more-projects-soon-div {
+        width: 90%;
+    }
+    #go-to-portfolio-div {
+        width: 90%;
+    }
+}
+@media (min-width: 840px) and (max-width: 1250px) {
+    .intro {
+        width: 70%;
+    }
+    .project {
+        width: 70%;
+    }
+    .project-img img {
+        width: 70%;
+    }
+    #more-projects-soon-div {
+        width: 70%;
+    }
+    #go-to-portfolio-div {
+        width: 70%;
+    }
+}
+@media (min-width: 1251px) {
+    .intro {
+        width: 60%;
+    }
+    .project {
+        width: 60%;
+    }
+    .project-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .project-img img {
+        width: 100%;
+        max-width: 950px;
+    }
+    #more-projects-soon-div {
+        width: 60%;
+    }
+    #go-to-portfolio-div {
+        width: 60%;
+    }
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    padding-top: 120px;
+}
+.container p {
+    text-align: justify;
+}
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+.project-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.project a {
+    text-decoration: none;
+}
+#go-to-portfolio-div {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}

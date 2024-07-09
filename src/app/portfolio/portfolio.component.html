@@ -1,1 +1,45 @@
-<p>portfolio works!</p>
+<div class="container">
+  <div class="intro mg-bottom-20">
+    <p class="title title-regular no-mg">Projects</p>
+    <p class="text-regular mg-top-5">
+      The projects I’ve worked on include school assignments and tasks related
+      to the courses I’ve completed.
+    </p>
+    <p class="text-regular">
+      Beyond my academic activities, I am currently involved in a web project at
+      my workplace. The project is being developed using Angular. To
+      successfully contribute to this initiative, everyone needs expertise in
+      responsive design, API consumption, app globalization, version control
+      systems, and, of course, proficiency in HTML, CSS, and TypeScript. Due to
+      company policies, I am unable to share images or specific details related
+      to this project.
+    </p>
+    <p class="text-regular">
+      You can click on each title below to open the website.
+    </p>
+  </div>
+  <div *ngFor="let project of projects" class="project mg-top-10">
+    <a
+      class="project-title title title-regular no-mg pointer"
+      href="{{ project.url }}"
+      >{{ project.name }}</a
+    >
+    <p class="project-description text-regular mg-bottom-10 mg-top-5">
+      {{ project.description }}
+    </p>
+    <div class="project-img">
+      <img src="{{ project.source }}" />
+    </div>
+  </div>
+  <div id="more-projects-soon-div" class="mg-top-20 mg-bottom-10">
+    <p class="text-regular">
+      <strong>I'll be adding more projects soon!</strong> Come back in a few
+      days. Hopefully I'll post some bigger projects, written in different
+      languages.
+    </p>
+  </div>
+  <div id="go-to-portfolio-div" class="mg-top-20">
+    <button class="primary-button mg-bottom-20" (click)="goToContact()">Go to Contact</button>
+  </div>
+  <footer class="footer"></footer>
+</div>

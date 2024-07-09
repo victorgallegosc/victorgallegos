@@ -18,7 +18,10 @@ export class AboutComponent implements OnInit {
 
   ngOnInit(): void {
     this.startCarousel();
-    window.scrollTo(0, 0);
+    setTimeout(() => {
+      window.scroll({ top: -1, left: 0, behavior: "smooth" });
+    }, 10);
+    
   }
 
   startCarousel(): void {
