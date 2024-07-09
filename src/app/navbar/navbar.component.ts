@@ -29,5 +29,11 @@ export class NavbarComponent implements OnInit{
   }
 
   ngOnInit() {
-  }  
+    var navbar = document.getElementById('navbar-logo-div');
+    navbar?.addEventListener('click', () => {
+      if (navbar) {
+        window.location.href = '/home';
+      }
+    })
+  }
 }

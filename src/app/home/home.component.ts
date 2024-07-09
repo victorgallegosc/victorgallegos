@@ -10,4 +10,8 @@ import { NavigationEnd, Router } from '@angular/router';
 export class HomeComponent {
 
   constructor() { }
+
+  goToAboutMe() {
+    window.location.href = '/about';
+  }
 }
