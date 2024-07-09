@@ -19,11 +19,10 @@
     </p>
   </div>
   <div *ngFor="let project of projects" class="project mg-top-10">
-    <a
-      class="project-title title title-regular no-mg pointer"
+    <a class="project-title title title-regular no-mg pointer"
       href="{{ project.url }}"
-      >{{ project.name }}</a
-    >
+      target="_blank"
+      >{{ project.name }}</a>
     <p class="project-description text-regular mg-bottom-10 mg-top-5">
       {{ project.description }}
     </p>
@@ -39,7 +38,9 @@
     </p>
   </div>
   <div id="go-to-portfolio-div" class="mg-top-20">
-    <button class="primary-button mg-bottom-20" (click)="goToContact()">Go to Contact</button>
+    <button class="primary-button mg-bottom-20" (click)="goToContact()">
+      Go to Contact
+    </button>
   </div>
   <footer class="footer"></footer>
 </div>

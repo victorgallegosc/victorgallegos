@@ -4,12 +4,22 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-portfolio',
   templateUrl: './portfolio.component.html',
-  styleUrl: './portfolio.component.css'
+  styleUrl: './portfolio.component.css',
 })
 export class PortfolioComponent implements OnInit {
   projects = [
-    {name: 'Personal Portfolio', description: 'Literally this website.', source: 'images/Portfolio-web.png', url: 'victorgallegos.com'},
-    {name: 'Tindog', description: 'A website for a brand new app, a Tinder for dogs!', source: 'images/Tindog.webp', url: 'https://tinderformydog.netlify.app'}
+    {
+      name: 'Personal Portfolio',
+      description: 'Literally this website.',
+      source: 'images/Portfolio-web.png',
+      url: '/home',
+    },
+    {
+      name: 'Tindog',
+      description: 'A website for a brand new app, a Tinder for dogs!',
+      source: 'images/Tindog.webp',
+      url: 'https://tinderformydog.netlify.app',
+    },
   ];
 
   constructor(private router: Router) {}
@@ -21,7 +31,10 @@ export class PortfolioComponent implements OnInit {
   goToContact() {
     this.router.navigate(['/home']).then(() => {
       setTimeout(() => {
-        window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+        window.scrollTo({
+          top: document.body.scrollHeight,
+          behavior: 'smooth',
+        });
       }, 0);
     });
   }
