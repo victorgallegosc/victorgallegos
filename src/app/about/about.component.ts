@@ -18,6 +18,7 @@ export class AboutComponent implements OnInit {
 
   ngOnInit(): void {
     this.startCarousel();
+    window.scrollTo(0, 0);
   }
 
   startCarousel(): void {
