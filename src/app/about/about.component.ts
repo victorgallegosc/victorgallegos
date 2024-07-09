@@ -29,6 +29,5 @@ export class AboutComponent implements OnInit {
       this.currentIndex = (this.currentIndex - 1 + this.carouselImages.length) % this.carouselImages.length;
     }, 3000);
   }
-  
 }
 
