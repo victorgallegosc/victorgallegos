@@ -1,0 +1,16 @@
+<div class="container">
+    <div id="carousel">
+      <div
+        *ngFor="let image of carouselImages; let i = index"
+        [ngClass]="{
+          'carousel-left': (i === (currentIndex - 1 + carouselImages.length) % carouselImages.length),
+          'carousel-center': i === currentIndex,
+          'carousel-right': (i === (currentIndex + 1) % carouselImages.length)
+        }"
+        class="carousel-item"
+      >
+        <img [src]="image.source" class="carousel-img" />
+      </div>
+    </div>
+  </div>
+  
