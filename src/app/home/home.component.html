@@ -20,7 +20,7 @@
 
   <section id="about-me-section" class="section">
     <div id="profile-photo-div">
-      <img src="images/Profile-BW.webp" height="150px" />
+      <img [lazyLoad]="'images/Profile-BW.webp'" height="150px" />
     </div>
     <p class="title title-regular mg-bottom-5">About me</p>
     <div id="about-me-paragraphs">
@@ -51,28 +51,28 @@
     </p>
     <div class="offers-div">
       <div class="offer">
-        <img src="/images/custom.png" />
+        <img [lazyLoad]="'/images/custom.png'" alt="Custom design"/>
         <p class="text-regular">
           Creating customized web solutions that align perfectly with your
           unique requirements and objectives.
         </p>
       </div>
       <div class="offer">
-        <img src="/images/ui-design.png" />
+        <img [lazyLoad]="'/images/ui-design.png'" alt="UI design"/>
         <p class="text-regular">
           Designing interfaces that are both easy to use and visually engaging,
           enhancing the overall user experience.
         </p>
       </div>
       <div class="offer">
-        <img src="/images/responsive.png" />
+        <img [lazyLoad]="'/images/responsive.png'" alt="Responsive design"/>
         <p class="text-regular">
           Ensuring your website looks and functions perfectly on any device,
           from desktops to smartphones.
         </p>
       </div>
       <div class="offer">
-        <img src="/images/friendly.png" />
+        <img [lazyLoad]="'/images/friendly.png'" alt="User-friendly"/>
         <p class="text-regular">
           Building strong, efficient, and optimized user-friendly websites using
           the best technologies.
@@ -82,7 +82,7 @@
   </section>
 
   <section id="portfolio-section" class="section">
-    <img src="images/rocket.png" />
+    <img [lazyLoad]="'images/rocket.png'" />
     <div class="portfolio-section-container">
       <p class="title title-regular mg-top-5">Portfolio</p>
       <p class="text-regular no-mg">
@@ -98,30 +98,34 @@
         to company policies, I am unable to share images or specific details
         related to this project.
       </p>
-      <button class="primary-button" routerLink="/portfolio">Go to Portfolio</button>
+      <button class="primary-button" routerLink="/portfolio">
+        Go to Portfolio
+      </button>
     </div>
   </section>
 
   <section id="contact-section">
     <div class="contact-container">
-      <img id="connect-img" src="images/Connections.webp" />
+      <img id="connect-img" [lazyLoad]="'/images/Connections.webp'" />
       <p class="title title-regular no-mg">Let's Connect!</p>
       <p class="text-regular">
         Feel free to reach out, a friendly hello makes my day better😁
       </p>
-      <p class="text-regular no-mg"><strong>Email:</strong> contact&#64;victorgallegos.com</p>
+      <p class="text-regular no-mg">
+        <strong>Email:</strong> contact&#64;victorgallegos.com
+      </p>
       <div class="social-icons mg-top-10">
         <a href="mailto: contact@victorgallegos.com" target="_blank">
-          <img src="images/icons/mail-icon.png"/>
+          <img [lazyLoad]="'images/icons/mail-icon.png'" />
         </a>
         <a href="https://www.instagram.com/queavictor" target="_blank">
-          <img src="images/icons/instagram-icon.png"/>
+          <img [lazyLoad]="'images/icons/instagram-icon.png'" />
         </a>
         <a
           href="https://www.linkedin.com/in/victorgallegoscaceres/"
           target="_blank"
         >
-          <img src="images/icons/linkedin-icon.png"/>
+          <img [lazyLoad]="'images/icons/linkedin-icon.png'" />
         </a>
       </div>
     </div>
